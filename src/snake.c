@@ -30,6 +30,7 @@ void init_game(void)
 	world.height = 8;
 	world.width = 8;
 	snake.belly = 0;
+	snake.length = 0;
 
 	uint8_t c;
 	for(c = 0; c < world.width * world.height; c++)
@@ -70,6 +71,7 @@ static void eat_food(const struct Position *head, enum Cell food_type)
 	move_head(head);
 	snake.belly += food_type == FOOD ? 1 : 5;
 	place_food();
+	snake.length++;
 }
 
 void tick(void)

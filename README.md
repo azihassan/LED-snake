@@ -4,6 +4,8 @@ It's a work in progress, but it's 90% finished.
 
 Written in C and compiled with avr-gcc.
 
+![Demonstration under Proteus](http://imgur.com/GYSCUwc.gif "Demonstration under Proteus")
+
 It's also possible to run a CLI version by building with `make build_cli` and running the resulting binary file.
 
 A few notes about the code :
